@@ -9,10 +9,10 @@ Author: HUANG Siyuan (519030910095)
 
 All boundary points satisfies:
 
-1. $$\frac{\partial^{2}f}{\partial x^{2}} + \frac{\partial^{2}f}{\partial y^{2}}=0$$
-2. $$\sqrt{{\frac{\partial{f}}{\partial{x}}}^2+{\frac{\partial{f}}{\partial{y}}}^2}\ge T$$
+1. $\frac{\partial^{2}f}{\partial x^{2}} + \frac{\partial^{2}f}{\partial y^{2}}=0$
+2. $\sqrt{{\frac{\partial{f}}{\partial{x}}}^2+{\frac{\partial{f}}{\partial{y}}}^2}\ge T$
 
-Where $$T$$ is predefined.
+Where $T$ is predefined.
 
 #### 2. Discrete sampling of gray values of boundaries
 
@@ -27,11 +27,11 @@ Procedure of finding edge cells:
 
 The vertices of a intersected boundary, $$p_1$$ and $$p_2$$ has the following properties:
 
-​	1. $$l(p_1) l(p_2) < 0$$
+​	1. $l(p_1) l(p_2) < 0$
 
-​	2. $$g(p_1) g(p_2) \ge 2\tilde{T}$$
+​	2. $g(p_1) g(p_2) \ge 2\tilde{T}$
 
-Where gradient threshold $$\tilde{T}$$ needs to be predefined. The intersected edges can be found in this way. 
+Where gradient threshold $\tilde{T}$ needs to be predefined. The intersected edges can be found in this way. 
 
 The simplest method to compute the position and the gray value of an intersecting point is to linearly interpolate the positions and the gray values of two vertices of the edge at which this intersecting point locates.
 
