@@ -1,11 +1,11 @@
 # EE356: Project 1
-SJTU EE356 Project 1: Threshold selection by clustering gray levels of boundary.
+SJTU-EE356 Project 1: Threshold selection by clustering gray levels of boundary.
 
 Author: HUANG Siyuan (519030910095)
 
 ## Paper Outline
 
-#### 1. Boundary points
+### 1. Boundary points
 
 All boundary points satisfies:
 
@@ -14,7 +14,7 @@ All boundary points satisfies:
 
 Where $T$ is predefined.
 
-#### 2. Discrete sampling of gray values of boundaries
+### 2. Discrete sampling of gray values of boundaries
 
 Goal: obtain the discrete sampling points of the boundaries within 2D image and the gray values of these discrete sampling points.
 
@@ -37,17 +37,17 @@ The simplest method to compute the position and the gray value of an intersectin
 
 In practice, if there exists a boundary between two vertices, we assume its gray value to be the average gray value of the two vertices.
 
-#### 3. Threshold selection method
+### 3. Threshold selection method
 
-##### 3.1. Simple case
+#### 3.1. Simple case
 
 In the case of 2D image containing only one object class and one background class, the unique cluster exists in the histogram of discrete sampling points of the boundary. Thus, threshold can be selected as the average value of gray values of the discrete sampling points of the boundary.
 
-##### 3.2. Bi-level threshold selection
+#### 3.2. Bi-level threshold selection
 
 If there is much noise or other small objects in 2D image, it is better to select threshold at the main peak of histogram of all discrete sampling points. Example: ```1_gray.bmp```.
 
-##### 3.3. Multilevel threshold selection
+#### 3.3. Multilevel threshold selection
 
 For 2D image containing more than one interesting object class, multilevel thresholds are needed to select. The means of the clusters in the histogram of gray values of boundary points correspond to thresholds of different segments in the image, exclusive of the background. Example: ```22.bmp```, ```23.bmp```.
 
@@ -55,11 +55,6 @@ For 2D image containing more than one interesting object class, multilevel thres
 
 To be uploaded.
 
+## Reference
 
-
-
-
-
-
-
-
+[1] Wang, L. and J. Bai (2003). "Threshold selection by clustering gray levels of boundary." Pattern Recognition Letters 24(12): 1983-1999.
