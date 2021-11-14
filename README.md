@@ -3,6 +3,19 @@ SJTU-EE356 Project 1: Threshold selection by clustering gray levels of boundary.
 
 Author: HUANG Siyuan (519030910095)
 
+## Structure
+
+| Name           | Content                                                      |
+| -------------- | ------------------------------------------------------------ |
+| data           | Original Image                                               |
+| hist           | Hist of gray values of boundary points                       |
+| boundary       | Boundary Detection Result                                    |
+| out            | Segmentation Result                                          |
+| Util.py        | utilities                                                    |
+| Mean.py        | single class object & background segmentation for 6.jpg, 8_gray.bmp, 40.jpg |
+| Bi-level.py    | bi-level selection for 1_gray.bmp, 13.bmp                    |
+| Multi-level.py | multi-level selection for 22.bmp, 23.bmp                     |
+
 ## Paper Outline
 
 ### 1. Boundary points
@@ -53,7 +66,7 @@ For 2D image containing more than one interesting object class, multilevel thres
 
 ## Results
 
-To be uploaded.
+Please refer to the report
 
 ## Reference
 
