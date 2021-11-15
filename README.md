@@ -1,4 +1,5 @@
-# EE356: Project 1
+# EE356 Project1: Threshold Selection
+
 SJTU-EE356 Project 1: Threshold selection by clustering gray levels of boundary.
 
 Author: HUANG Siyuan (519030910095)
